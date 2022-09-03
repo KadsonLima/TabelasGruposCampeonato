@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body{
-	display:flex;
+
   flex-direction:column;
   align-items:center;
   text-transform: uppercase;
@@ -23,6 +23,11 @@ h1{
 
 
 }
+
+.hidden{
+  display: none !important;
+}
+
 .logo{
   width: 10%;
   position: static;
@@ -44,6 +49,9 @@ font-size:12px;
   font-family: 'Kanit', sans-serif;
 
   font-weight: 600;
+  display: flex;
+flex-direction: column;
+align-items: center;
   
 }
 *{box-sizing:border-box;}
@@ -86,11 +94,128 @@ td:nth-child(1){
 }
 
 td:nth-child(2){  
-	width:143px;
+	width:180px;
   	padding: 0 5px;
 }
 
 td:nth-last-child(-n+3){  
 	width:70px;
   text-align:center;
+}
+
+
+.confrontos{
+  font-weight: 600;
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  gap: 100px;
+  color: #fffeff;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius:10px;
+}
+}
+.jogos{
+  width:100%;
+	display: flex;
+  flex-direction:column;
+flex-wrap: wrap;
+gap: 10px;
+  align-items:center;
+justify-content: space-around;
+
+}
+span{
+  background-color:#38393d;
+  width:208px;
+  height:30px;
+  text-align:center;
+   text-transform: uppercase;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.rodada{
+	width:100%;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+    
+}
+.partida{
+	display:flex;
+  	align-items:center;
+  margin-bottom: 8px;
+}
+
+
+.partida span:nth-child(2){
+	width: 60px;
+    text-align: center;
+  	background: #f9941f;
+  color: #0d0d0c;
+   
+}
+.partida span:nth-child(1){
+	border-radius: 3px 0px 0px 3px;
+    display: flex;
+  	justify-content: end;
+}
+
+.partida span:nth-child(3){
+	border-radius: 0px 3px 3px 0px;
+   	display: flex;
+  	justify-content: start;
+}
+
+*{box-sizing:border-box;}
+table{
+  border-collapse: collapse;
+
+}
+h3 {
+  margin: 5px;
+  height: 40px;
+  width:208px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:4px;
+  background-color: #080808;
+  color: #f9941f;
+  
+   text-transform: uppercase;
+  
+}
+
+.partida span{
+  display: flex;
+  gap:5px;
+}
+
+.partida span:nth-child(1) h7{
+  background-color: #f03333;
+}
+
+.partida span:nth-child(3) h7{
+  background-color: #2727b7;
+}
+
+h7{
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  border: 1px solid #f9941f;
+  background-color: #38393d;
+  width: 100px;
+  color: #f9941f;
+  font-family: 'Kanit', sans-serif;
+font-weight: 600;
+border-radius: 4px;
+
 }
