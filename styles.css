@@ -105,10 +105,11 @@ td:nth-last-child(-n+3){
 
 
 .confrontos{
+	font-size:15px;
   font-weight: 600;
   font-family: 'Kanit', sans-serif;
   display: flex;
-  gap: 100px;
+  gap: 50px;
   color: #fffeff;
   background-color: rgba(0, 0, 0, 0.39);
   border-radius:10px;
